@@ -1,1 +1,4 @@
-
+Set:-
+***
+-set is an associative container that stored unique elements in sorted order
+-default it stored element in asending order
