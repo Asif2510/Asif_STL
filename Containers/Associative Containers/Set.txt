@@ -2,3 +2,76 @@ Set:-
 ***
 -set is an associative container that stored unique elements in sorted order
 -default it stored element in asending order
+-A set does not support index-based access like a vector.
+-find() returns an iterator to the element if found; otherwise, it returns end().
+-count() returns 1 if the element exists and 0 otherwise.
+-we cannot modify a set element directly using an iterator
+
+#include <set>
+#include <iostream>
+using namespace std;
+int main()
+{
+    set<string,greater<string>>StringSet;
+    StringSet.insert("asif");
+    StringSet.insert("shaikh");
+    StringSet.insert("Adi");
+    StringSet.insert("suhas");
+    StringSet.insert("ganesh");
+    
+    set<string>::iterator it;
+    
+    if(!StringSet.empty())
+    {
+       cout<<"Values In Order Set is :- "<<endl; 
+       it=StringSet.begin();
+       while(it!=StringSet.end())
+       {
+         cout<<*it<<endl;
+         it++;
+       }
+    }
+    else
+    {
+       cout<<"set is Empty"<<endl; 
+       return 0;
+    }
+    
+    it=StringSet.begin();
+    
+    cout<<"\nfirst data in set is [begin()] :- "<<*it<< endl; 
+    
+    it=StringSet.end();
+    it--;
+    cout<<"\nLast data in set is [end()] :- "<<*it<< endl; 
+    
+    it=StringSet.find("Adi");
+    
+    if(it!=StringSet.end())
+      cout<<"\nfind (\"Adi\")data(present) in set is [find()] :- "<<*it<< endl; 
+    
+    it=StringSet.find("Aai");
+    
+    if(it==StringSet.end())
+      cout<<"\nfind (\"Aai\")data(not Present) in set is [find()] :- "<<endl; 
+
+    
+    cout<<"\ncount (\"asif\")data(present) in set is [count()] :- "<<StringSet.count("asif")<< endl;   
+    cout<<"\ncount (\"tosif\")data(not Present) in set is [count()] :- "<<StringSet.count("tosif")<< endl;   
+    
+    cout<<"\nerase (\"asif\")data(present) in set is [erase()] :- \nAfter Earse data :-"<<StringSet.erase("asif")<< endl;   
+    
+    if(!StringSet.empty())
+    {
+       cout<<"Values In Order Set is :- "<<endl; 
+       
+       it=StringSet.begin();
+       
+       while(it!=StringSet.end())
+       {
+         cout<<*it<<endl;
+         it++;
+       }
+    }  
+    return 0;
+}
