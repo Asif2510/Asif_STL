@@ -75,3 +75,34 @@ int main()
     }  
     return 0;
 }
+
+
+
+*********************************
+Output:-
+Values In Order Set is :- 
+suhas
+shaikh
+ganesh
+asif
+Adi
+
+first data in set is [begin()] :- suhas
+
+Last data in set is [end()] :- Adi
+
+find ("Adi")data(present) in set is [find()] :- Adi
+
+find ("Aai")data(not Present) in set is [find()] :- 
+
+count ("asif")data(present) in set is [count()] :- 1
+
+count ("tosif")data(not Present) in set is [count()] :- 0
+
+erase ("asif")data(present) in set is [erase()] :- 
+After Earse data :-1
+Values In Order Set is :- 
+suhas
+shaikh
+ganesh
+Adi
