@@ -1,1 +1,19 @@
+tuple:-
+*******
+-tuple is a STL utility used to stored fixed numbers of values of Different data types in single object
 
+syntax declare tupple
+tuple<datatype1,data type2,data type3> tupleName (value1,value2,value3)
+tuple<int, string, double> t(101, "Asif", 85.5);
+-we use get<index>(tupleName) to access elements in tuple
+-tie is used to assign tuple element to existing variable
+-pair stores only two Different or same data type values in pair but tuple different data type values
+irst tupple Values 
+        1)Id :1
+        2)Name :Asif
+
+
+Second tupple Values 
+        1)Id :1
+        2)Name :Shaikh
+        3)mob.no :9075719638
