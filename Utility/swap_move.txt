@@ -1,1 +1,20 @@
+move:-
+****
+-move is used to transfer ownership to one object to another
+#include <iostream>
+#include <string>
+#include <utility>
+using namespace std;
 
+int main()
+{
+    string s1 = "Hello World";
+
+    string s2 = move(s1);
+
+    cout << "s2: " << s2 << endl;
+    cout << "s1: " << s1 << endl;
+}
+
+s2: Hello World
+s1:
