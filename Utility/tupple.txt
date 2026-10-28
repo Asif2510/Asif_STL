@@ -28,7 +28,32 @@ E.g
 auto t = make_tuple(1,string("Asif"),9075712915);
 cout << get<0>(t) << " " << get<1>(t) << " " << get<2>(t)<<endl;
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+tie()
+-tie() is function <tuple>used to bind existing valriable with elements present in tuple
 
 
+#include <iostream>
+#include <tuple>
+#include <string>
+using namespace std;
+
+int main()
+{
+    tuple<int, string, double> t(101, "Asif", 25000.5);
+
+    int id;
+    string name;
+    double salary;
+
+    tie(id, name, salary) = t;
+
+    cout << id << endl;
+    cout << name << endl;
+    cout << salary << endl;
+
+    return 0;
+}
 
 
