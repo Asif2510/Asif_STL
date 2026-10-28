@@ -1,1 +1,24 @@
+pair:-
+****
+-pair is template used to stored two valued having different or same data types
 
+make_pair()
+-make_pair() is a function used to create pair object from given values
+#include <iostream>
+#include <utility>
+#include <string>
+using namespace std;
+
+int main()
+{
+    // Using pair
+    pair<int, string> p1(101, "Asif");
+
+    // Using make_pair()
+    auto p2 = make_pair(102, string("Rahul"));
+
+    cout << p1.first << " " << p1.second << endl;
+    cout << p2.first << " " << p2.second << endl;
+
+    return 0;
+}
