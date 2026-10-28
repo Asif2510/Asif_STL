@@ -1,5 +1,6 @@
 tuple:-
 *******
+-it is class template
 -tuple is a STL utility used to stored fixed numbers of values of Different data types in single object
 
 syntax declare tupple
@@ -17,3 +18,17 @@ Second tupple Values
         1)Id :1
         2)Name :Shaikh
         3)mob.no :9075719638
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+make_tuple()
+************
+-it is function used to create tuple object 
+-it create tuple object using given values
+
+E.g
+auto t = make_tuple(1,string("Asif"),9075712915);
+cout << get<0>(t) << " " << get<1>(t) << " " << get<2>(t)<<endl;
+
+
+
+
+
