@@ -1,4 +1,4 @@
-move:-
+move():-
 ****
 -move is used to transfer ownership to one object to another
 #include <iostream>
@@ -18,3 +18,24 @@ int main()
 
 s2: Hello World
 s1:
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+swap():-
+****
+-it is used to exchanges the values of two variables.
+#include <iostream>
+#include <utility>
+using namespace std;
+
+int main()
+{
+    int a = 10;
+    int b = 20;
+
+    swap(a, b);
+
+    cout << "a = " << a << endl;
+    cout << "b = " << b << endl;
+}
